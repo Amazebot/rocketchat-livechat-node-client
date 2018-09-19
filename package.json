@@ -1,0 +1,23 @@
+{
+  "name": "rocketchat-livechat-node-client",
+  "version": "0.0.0",
+  "description": "Host a livechat embed, connect and respond to events in it's stream via the Node JS SDK",
+  "main": "dist/app.js",
+  "repository": "git@github.com:Amazebot/rocketchat-livechat-node-client.git",
+  "author": "Tim Kinnane <timkinnane@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@rocket.chat/sdk": "^0.2.7",
+    "dotenv": "^6.0.0",
+    "typescript": "^3.0.3",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "ts-node": "^7.0.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/app.js",
+    "dev": "ts-node ./src/app.ts"
+  }
+}
